@@ -9,7 +9,7 @@ while True:
 
 #headers with user authorization token to authenticate api calls
 #developer keys will expire within 60 minutes. You will want to go to Box Developers > Configuration to generate your own key
-headers = {'Authorization': 'Bearer YR8dDKJqjbyqWJno6r8NoivyTmilTobz'}
+headers = {'Authorization': 'Bearer DEVELOPER_KEY'}
 # options request to event url to get list of events
 r1 = requests.options(url, headers=headers)
 events = r1.json()
